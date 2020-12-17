@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Youtube</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Youtube</h1>
+    <% videos.forEach(function(vid){%>
+      <div><a href="videos/<%=vid.id%>"><img src= <%= vid.thumbnail%>><li><%= vid.title %> -
+      <%= vid.views %></li></a></div>
+    <%})%>
+  </body>
+</html>
